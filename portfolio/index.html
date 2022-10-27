@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Add icon library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!--Font style links-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+         href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Baloo+Bhai+2:wght@600&family=Roboto&display=swap"
+         rel="stylesheet">
+ 
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!--My custom css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- navbar -->
+ <header class="header">
+
+        <nav class="navbar navbar-style navbar-fixed-top">
+            <div class="container">
+                
+                    <div class="navbar-header">
+
+                        <!--icon bar button to contain the menu items for small screen -->
+                        <button type="button" class="navbar-toggle" onclick = "toggleHide()" data-toggle="collapse" data-target="#iconbar" >
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="">
+                            <image class="logo" src="pics/logo.png" alt="My Portfolio"> </a>
+                    </div>
+
+
+
+                    <div class="collapse navbar-collapse" id="iconbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#home">Home</a>
+                            <li><a href="#aboutMe">About Me</a>
+                            <li><a
+                                    href="https://www.fiverr.com/users/neil0904" target="_blank">My
+                                    Services</a>
+                            <li><a href="#contact">Contact Me</a>
+                        </ul>
+                    </div>
+
+            </div>
+            
+        </nav>
+
+    <!-- my info -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                        <div class="col-sm-6 info">
+                            <h3>Hi there,</h3>
+                            <h4> Welcome to my portfolio! <br> I'm...</h4>
+                            <p class="name">Neelma Niazi</p>
+                            <h3 class="skills">Web Developer | Freelancer | Youtuber | <br> Social Media Page Creator/Manager</h3>
+                            <a class="btn btn-one" href="resume/Neelma_Resume_updated.pdf">Download CV</a>
+                            <a class="btn btn-two" href="https://github.com/neil0904">My Projects</a>
+                        </div>
+                        <div class="col-sm-6 img">
+                             <img src="pics/IMG-20200826-WA0011.jpg" alt="" class="image-responsive">
+                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- about me -->
+    <section id="aboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 img">
+                    <img src="pics/pizzeria (2).jpg" alt="" class="image-responsive">
+               </div>
+                <div class="col-sm-6">
+                    <h1>About Me</h1>
+                                <p>I am a highly energetic, motivated, enthusiastic, and multitasking individual
+                                    specializing in IT,communication, and management. I’ve done Master of IT and waiting
+                                    for result. Now a
+                                    days, I’m working on web development projects as a freelancer.<br>
+                                    Currently, I am a Front-end web developer. However, I'm learning Node.js, MongoDB,
+                                    and React
+                                    as well.
+                                </p>
+                                <h3>What I'll provide you?</h3>
+                                <p>A cost-effecient, fully responsive, secured website that has a user-friendly interfac, with a code that will be:
+                                <ul>
+                                    <li>neat and clean,</li>
+                                    <li>SEO friendly,</li>
+                                    <li>easy to understand,</li>
+                                    <li>reusable, and</li>
+                                    <li>easy to maintain.</li>
+                                </ul>
+                                
+                                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact"></div>
+        <div class="container">
+            <h1>Contact Me </h1>
+            <p>
+                For further information, you're always welcome to contact me...
+            </p>
+            <button class="btn"><i class="fa fa-envelope">
+
+                    <a href="mailto:nn80@live.com" target="_blank">Email Me</a>
+                </i></button>
+            <button class="btn"><i class="fa fa-whatsapp">
+                    <a href="http://wa.me/46720213709" target="_blank">Whatsapp Me</a>
+                </i></button>
+            <button class="btn"><i class="fa fa-linkedin">
+                    <a href="https://www.linkedin.com/in/neelma-niazi/" target="_blank">My LinkedIn</a>
+                </i></button>
+        </div>
+    </section>
+   
+     <footer>
+            <div class="col-sm-12 center">
+                Copyright &copy; 2022 All rights reserved. Neelma Niazi.
+            </div>
+        </footer>
+ </header>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <!-- My custom JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
