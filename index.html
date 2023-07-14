@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Add icon library -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-     <!--Font style links-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Baloo+Bhai+2:wght@600&family=Roboto&display=swap"
-         rel="stylesheet">
- 
-     <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Font style links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Baloo+Bhai+2:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
 
-      <!-- jQuery library -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
@@ -27,58 +28,60 @@
 
     <title>My Portfolio</title>
 </head>
+
 <body>
     <!-- navbar -->
- <header class="header">
+    <nav class="navbar navbar-style navbar-fixed-top">
+        <div class="container">
 
-        <nav class="navbar navbar-style navbar-fixed-top">
-            <div class="container">
-                
-                    <div class="navbar-header">
+            <div class="navbar-header">
 
-                        <!--icon bar button to contain the menu items for small screen -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#iconbar" >
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                <!--icon bar button to contain the menu items for small screen -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#iconbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                        <a class="navbar-brand" href="">
-                            <image class="logo" src="pics/logo.png" alt="My Portfolio"> </a>
-                    </div>
-
-
-
-                    <div class="collapse navbar-collapse" onclick = "toggleHide()" id="iconbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#home">Home</a>
-                            <li><a href="#aboutMe">About Me</a>
-                            <li><a
-                                    href="https://www.fiverr.com/users/neil0904" target="_blank">My
-                                    Services</a>
-                            <li><a href="#contact">Contact Me</a>
-                        </ul>
-                    </div>
-
+                <a class="navbar-brand" href="">
+                    <image class="logo" src="pics/logo.png" alt="My Portfolio">
+                </a>
             </div>
-            
-        </nav>
+
+
+
+            <div class="collapse navbar-collapse" onclick="toggleHide()" id="iconbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">Home</a>
+                    <li><a href="#aboutMe">About Me</a>
+                    <li><a href="#skills">My Skills</a>
+                    <li><a href="https://www.fiverr.com/users/neil0904" target="_blank">My
+                            Services</a>
+                    <li><a href="#projects">My Projects</a>
+                    <li><a href="#contact">Contact Me</a>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
 
     <!-- my info -->
     <section id="home">
         <div class="container">
             <div class="row">
-                        <div class="col-sm-6 info">
-                            <h3>Hi there,</h3>
-                            <h4> Welcome to my portfolio! <br> I'm...</h4>
-                            <p class="name">Neelma Niazi</p>
-                            <h3 class="skills">Web Developer | Freelancer | Programmer</h3>
-                            <a class="btn btn-one" href="resume/Neelma_Resume Dec 2022.docx">Download CV</a>
-                            <a class="btn btn-two" href="https://github.com/neil0904">My Projects</a>
-                        </div>
-                        <div class="col-sm-6 img">
-                             <img src="pics/IMG-20200826-WA0011.jpg" alt="" class="image-responsive">
-                        </div>
+                <div class="col-sm-7 info">
+                    <h3>Hi there,</h3>
+                    <h4> Welcome to my portfolio! <br> I'm...</h4>
+                    <p class="name">Neelma Niazi</p>
+                    <h3 class="profession">Web Developer | Freelancer | Programmer</h3>
+                    <a class="btn btn-one" href="resume/Neelma Niazi Junior Web Developer Resume.docx">Download My
+                        CV</a>
+                    <a class="btn btn-two" href="https://www.fiverr.com/users/neil0904" target="_blank">Hire Me</a>
+                </div>
+                <div class="col-sm-5 img">
+                    <img src="pics/IMG-20200826-WA0011.jpg" alt="" class="image-responsive">
+                </div>
             </div>
         </div>
     </section>
@@ -86,36 +89,247 @@
     <section id="aboutMe">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 img">
+                <div class="col-sm-5">
                     <img src="pics/pizzeria (2).jpg" alt="" class="image-responsive">
-               </div>
-                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-7">
                     <h1>About Me</h1>
-                                <p>I am a highly energetic, motivated, enthusiastic, and multitasking individual
-                                    specializing in IT,communication, and management. I’ve done Master of IT and waiting
-                                    for result. Now a
-                                    days, I’m working on web development projects as a freelancer.<br>
-                                    Currently, I am a Front-end web developer. However, I'm learning Node.js, MongoDB,
-                                    and React
-                                    as well.
-                                </p>
-                                <h3>What I'll provide you?</h3>
-                                <p>A cost-effecient, fully responsive, secured website that has a user-friendly interfac, with a code that will be:
-                                <ul>
-                                    <li>neat and clean,</li>
-                                    <li>SEO friendly,</li>
-                                    <li>easy to understand,</li>
-                                    <li>reusable, and</li>
-                                    <li>easy to maintain.</li>
-                                </ul>
-                                
-                                </p>
+                    <p>I am a passionate and dedicated frontend web developer, programmer, and freelancer, eager to
+                        make my mark in the digital realm. As a fresher in the industry, I bring a fresh
+                        perspective, a hunger for knowledge, and a drive to create innovative and user-friendly web
+                        experiences.
+
+                        With a solid foundation in HTML5, CSS3, and JavaScript, I specialize in crafting visually
+                        appealing and responsive websites that engage and captivate users. I am adept at translating
+                        design concepts into functional code, ensuring seamless navigation and optimal performance
+                        across various devices and browsers.
+
+                        Driven by curiosity and a love for problem-solving, I thrive on tackling complex challenges
+                        and finding efficient solutions. Through continuous learning and staying updated with the
+                        latest industry trends and best practices, I strive to deliver cutting-edge websites that
+                        exceed client expectations.
+
+                        As a freelancer, I value clear communication, collaboration, and client satisfaction. I
+                        believe in building strong relationships with my clients, understanding their unique
+                        requirements, and delivering tailor-made solutions that align with their vision and goals.
+
+                        My commitment to quality and attention to detail are at the core of my work ethic. I take
+                        pride in writing clean, efficient, and maintainable code that not only meets industry
+                        standards but also ensures scalability and flexibility for future enhancements.
+
+                        I am excited about the opportunity to work on challenging projects, collaborate with
+                        like-minded individuals, and contribute my skills and creativity to make a positive impact
+                        in the digital landscape. Thank you for visiting my portfolio website, and I look forward to
+                        connecting with you and bringing your web development projects to life.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- skills -->
+    <section id="skills">
+        <div class="container-fluid">
+            
+                <h1>MY SKILLS</h1>
+            <div class="row">
+                
+                    <div class="col-sm-6 IT-skills">
+                        <h2>Technical Skills</h2>
+
+                        <div class="skills-container">
+                            <div class="skill">
+                                <div class="skill-title">HTML5</div>
+                                <div class="skill-bar" value="90%">
+                                <div class="skill-line" style="max-width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">CSS3</div>
+                                <div class="skill-bar" value="60%">
+                                <div class="skill-line" style="max-width: 60%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">JavaScript(ES6)</div>
+                                <div class="skill-bar" value="50%">
+                                <div class="skill-line" style="max-width: 50%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">JQuery</div>
+                                <div class="skill-bar" value="20%">
+                                <div class="skill-line" style="max-width: 20%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">Bootstrap5</div>
+                                <div class="skill-bar" value="70%">
+                                <div class="skill-line" style="max-width: 70%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">ReactJS</div>
+                                <div class="skill-bar" value="35%">
+                                <div class="skill-line" style="max-width: 35%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">NodeJS</div>
+                                <div class="skill-bar" value="10%">
+                                <div class="skill-line" style="max-width: 10%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">Python</div>
+                                <div class="skill-bar" value="50%">
+                                <div class="skill-line" style="max-width: 50%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">C++</div>
+                                <div class="skill-bar" value="66%">
+                                <div class="skill-line" style="max-width: 66%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">MS Visio</div>
+                                <div class="skill-bar" value="80%">
+                                <div class="skill-line" style="max-width: 80%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">github</div>
+                                <div class="skill-bar" value="60%">
+                                <div class="skill-line" style="max-width: 60%"></div>
+                            </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-title">Figma</div>
+                                <div class="skill-bar" value="65%">
+                                <div class="skill-line" style="max-width: 65%"></div>
+                            </div>
+                            </div>
+                        </div><!-- technical skills-container closed -->
+                    </div><!-- IT skills closed -->
+                
+
+                   
+                        <div class="col-sm-6 professional-skills">
+                            <h2>Professional Skills</h2>
+                            <div class="skills-container">
+                                <div class="skill">
+                                    <div class="skill-title">Organizing</div>
+                                    <div class="skill-bar" value="99%">
+                                    <div class="skill-line" style="max-width: 99%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Time Management</div>
+                                    <div class="skill-bar" value="99%">
+                                    <div class="skill-line" style="max-width: 99%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Planning</div>
+                                    <div class="skill-bar" value="86%">
+                                    <div class="skill-line" style="max-width: 86%"></div>
+                                </div>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="skill-title">Team Work</div>
+                                    <div class="skill-bar" value="95%">
+                                    <div class="skill-line" style="max-width: 95%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Administration</div>
+                                    <div class="skill-bar" value="99%">
+                                    <div class="skill-line" style="max-width: 99%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Communication</div>
+                                    <div class="skill-bar" value="98%">
+                                    <div class="skill-line" style="max-width: 98%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Decision Making</div>
+                                    <div class="skill-bar" value="86%">
+                                    <div class="skill-line" style="max-width: 86%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Detail-Oriented</div>
+                                    <div class="skill-bar" value="95%">
+                                    <div class="skill-line" style="max-width: 95%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Creative</div>
+                                    <div class="skill-bar" value="95%">
+                                    <div class="skill-line" style="max-width: 95%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Conflict Management</div>
+                                    <div class="skill-bar" value="95%">
+                                    <div class="skill-line" style="max-width: 95%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Stress Management</div>
+                                    <div class="skill-bar" value="95%">
+                                    <div class="skill-line" style="max-width: 95%"></div>
+                                </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-title">Leadership</div>
+                                    <div class="skill-bar" value="96%">
+                                    <div class="skill-line" style="max-width: 96%"></div>
+                                </div>
+                                </div>
+
+
+                            </div>
+                        </div><!-- professional skills closed -->
+                    
+                
+            </div><!-- row closed -->
+        </div><!-- container closed -->
+
+    </section>
+
+    <!-- My Projects -->
+    <!---
+        <section id="projects">
+        </div>
+        <div class="container">
+            <h1>My Projects </h1>
+            <p>
+                For further information, you're always welcome to contact me...
+            </p>
+            <button class="btn"><i class="fa fa-envelope">
+
+                    <a href="mailto:nn80@live.com" target="_blank">Email Me</a>
+                </i></button>
+            <button class="btn"><i class="fa fa-whatsapp">
+                    <a href="http://wa.me/46720213709" target="_blank">Whatsapp Me</a>
+                </i></button>
+            <button class="btn"><i class="fa fa-linkedin">
+                    <a href="https://www.linkedin.com/in/neelma-niazi/" target="_blank">My LinkedIn</a>
+                </i></button>
+            <button class="btn"><i class="fa fa-github">
+                    <a href="https://www.github.com/neil0904" target="_blank">My Github</a>
+                </i></button>
+        </div>
+    </section>
+--->
     <!-- contact -->
-    <section id="contact"></div>
+    <section id="contact">
+        </div>
         <div class="container">
             <h1>Contact Me </h1>
             <p>
@@ -131,22 +345,29 @@
             <button class="btn"><i class="fa fa-linkedin">
                     <a href="https://www.linkedin.com/in/neelma-niazi/" target="_blank">My LinkedIn</a>
                 </i></button>
+            <button class="btn"><i class="fa fa-github">
+                    <a href="https://www.github.com/neil0904" target="_blank">My Github</a>
+                </i></button>
         </div>
     </section>
-   
-     <footer>
-            <div class="col-sm-12 center">
-                Copyright &copy; 2022 All rights reserved. Neelma Niazi.
-            </div>
-        </footer>
- </header>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
-  <!-- My custom JavaScript -->
-  <script src="main.js"></script>
+
+    <!-- footer -->
+    <footer>
+        <div class="col-sm-12 center">
+            Copyright &copy; 2022-2025. All rights reserved. Neelma Niazi.
+        </div>
+    </footer>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- My custom JavaScript -->
+    <script src="main.js"></script>
 
 </body>
+
 </html>

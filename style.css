@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+
 }
 html{
     scroll-behavior: smooth;
@@ -10,9 +11,6 @@ html{
     width: auto;
     display: flex;
     
-}
-.header{
-    height: 100vh;
 }
 
 .navbar-style{
@@ -84,10 +82,11 @@ a.btn:hover{
     font-weight: bold;
     color: rgb(189, 152, 224);
 }
-.skills{
+.profession{
     
     font-family: 'Baloo Bhai 2', cursive;
 }
+
 #home img{
     height: 40%;
     width: 70%;
@@ -101,13 +100,154 @@ a.btn:hover{
     color: rgb(213, 211, 210);
     padding: 50px;
     text-align: justify;
-
 }
 #aboutMe img{
+    margin: 20%;
     height: 40%;
     width: 70%;
     box-shadow: -25px 25px 15px gray;  
     border-bottom-right-radius: 45px;
+
+}
+#skills{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(213, 211, 210);
+    
+    /*background-color: rgb(189, 152, 224);*/
+}
+#skills h1{
+    display: block;
+    text-align: center;
+} /*
+#skills .IT-skills, .professional-skills{
+    text-align: left;
+   text-align: center;
+    display: flex;
+}*/
+#skills .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    mato: 70px;
+}
+#skills .IT-skills h2, .professional-skills h2{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: inline-block;
+    font-weight: 600px;
+    
+} 
+#skills .IT-skills h2::before, .professional-skills h2::before{
+    content: '';
+   position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 125%;
+    left: 0;
+    background-color: #808080;
+}
+#skills .IT-skills h2::after, .professional-skills h2::after{
+    content: '';
+   position: absolute;
+    widows: 25%;
+    height: 3px;
+    top: calc(125% - 1px);
+    left: 0;
+    background-color: rgb(189, 152, 224);
+}
+
+#skills .skills-container{
+    flex-basis: 46%;
+}
+#skills .skill-title{
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+}
+#skills .skill-bar{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: rgb(255, 255, 255, 0.6); 
+    border-radius: 15px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+/*#skills .skill-bar::before{
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    left: 0.5em;
+    top: 0.5em;
+    bottom: 0.5em;
+    width: 86%; 
+    min-width: calc(var(--width, 0)100% * 1);
+    max-width: calc(100% - 1 em);
+    background: rgb(189, 152, 224);
+    height: 35px;
+    border-radius: 100px;
+position: absolute;
+  }*/
+#skills .skill-bar::after{
+    position: absolute;
+    content: attr(value);
+    top: -35px;
+    right: 0;
+    color: #808080;
+   font-size: 18px;
+  }
+#skills .skill-line{
+    position: absolute;
+    width: 0;
+    height: 7px;
+    background: rgb(189, 152, 224);
+    border-radius: 15px;
+    top: -1px;
+    animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+@keyframes animate {
+    100%{
+        width: 100%;
+    }
+}
+#skills .skill-line::after{
+    content: '';
+    position: absolute;
+    /*width: 25px;*/
+    height: 25px;
+    /*border-radius: 50%;*/
+    left: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(189, 152, 224);
+    border: 3px solid rgb(189, 152, 224);
+}
+
+#projects{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(213, 211, 210);
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+
+}
+
+#projects p{
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;   
 }
 
 #contact{
@@ -147,8 +287,8 @@ footer{
     background: grey;
 }
 
-/*-----CSS for small screen 680px-----*/
-@media  screen and (max-width: 680px) {
+/*-----CSS for small screen 768px-----*/
+@media  screen and (max-width: 768px) {
     .logo{
         height: 8vh;
     }
@@ -165,7 +305,7 @@ footer{
         font-size: 45px;
     
     }
-    .skills{
+    .profession{
     
         font-size: large;
     }
@@ -184,9 +324,8 @@ footer{
     }
     #aboutMe{
         font-size: 14px;
-        margin: 20px;
+        /*margin: 20px;*/
         padding: 0;
-        text-align: left;
     
     }
     #aboutMe img{
@@ -194,12 +333,22 @@ footer{
         display: none;
         
     }
-    #contact{
+    #skills .skills-container{
+		padding: 30px 8%;
+	}
+    #skills .IT-skills h2, .professional-skills h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    #skills .skill-title, .skill-bar{
+		font-size: 15px;;
+	}
+    #contact, #projects{
         font-size: 14px;       
         align-items: center; 
     
     }
-    #contact p{
+    #contact p, #projects p{
        
         font-size: 12px;   
     }
@@ -215,8 +364,8 @@ footer{
 }
 
 
-/*-----CSS for small screen 550px-----*/
-@media  screen and (max-width: 550px) {
+/*-----CSS for small screen 568px-----*/
+@media  screen and (max-width: 568px) {
     .row{
         margin: 10px;
     
@@ -247,11 +396,34 @@ footer{
       
         display: none;
     }
-    #contact{
+
+    #skills .row{
+		flex-direction: column;
+	}
+	#skills .row h1{
+		font-size: 36px;
+	}
+	#skills .row{
+		margin-top: 30px;
+	}
+	#skills .IT-skills:nth-child(2), .professional-skills:nth-child(2){
+		margin-top: 20px;
+	}
+    #skills .skills-container{
+		padding: 30px 8%;
+	}
+    #skills .IT-skills h2, .professional-skills h2{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    #skills .skill-title, .skill-bar{
+		font-size: 10px;;
+	}
+    #contact, #projects{
         font-size: 10px;       
     
     }
-    #contact p{
+    #contact p, #projects p{
        
         font-size: 14px;   
     }
@@ -265,4 +437,6 @@ footer{
        font-size: x-small;
     }
 }
+
+
 
