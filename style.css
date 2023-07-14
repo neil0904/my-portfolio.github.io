@@ -386,7 +386,7 @@ footer{
     }
     #aboutMe{
         font-size: 12px;
-        margin: 10px;
+        margin: 0;
         text-align: left;
         padding: 0;
         justify-content: center;
