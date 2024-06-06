@@ -343,6 +343,10 @@ footer{
     #skills .skill-title, .skill-bar{
 		font-size: 15px;;
 	}
+	#skills .skill-title, .skill-bar value{
+		font-size: 10px;
+	}
+
     #contact, #projects{
         font-size: 14px;       
         align-items: center; 
@@ -419,6 +423,10 @@ footer{
     #skills .skill-title, .skill-bar{
 		font-size: 10px;
 	}
+	#skills .skill-title, .skill-bar value{
+		font-size: 10px;
+	}
+
     #contact, #projects{
         font-size: 10px;       
     
